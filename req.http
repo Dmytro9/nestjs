@@ -2,6 +2,7 @@
 ###
 GET http://localhost:3000/tasks HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsbGEiLCJpYXQiOjE1Njk3NzQzMjksImV4cCI6MTU2OTc3NzkyOX0.EM7nh60gom8mYahg9uEajgbPaYP067VSFRkUNFgPSx0
 
 
 ###
@@ -12,9 +13,11 @@ content-type: application/json
 ###
 POST http://localhost:3000/tasks HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsbGEiLCJpYXQiOjE1Njk3NzQzMjksImV4cCI6MTU2OTc3NzkyOX0.EM7nh60gom8mYahg9uEajgbPaYP067VSFRkUNFgPSx0
+
 
 {
-    "title": "",
+    "title": "title 2",
     "description": "someDescription"
 }
 
@@ -24,7 +27,7 @@ POST http://localhost:3000/auth/signup HTTP/1.1
 content-type: application/json
 
 {
-    "username": "Alla",
+    "username": "Dima",
     "password": "Aa123___"
 }
 
