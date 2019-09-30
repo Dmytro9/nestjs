@@ -16,7 +16,7 @@ const jwtConfig = config.get('jwt');
     JwtModule.register({
       secret: process.env.JWT_SECRET || jwtConfig.secret, // change before deploy to stronger one
       signOptions: {
-        expiresIn: jwtConfig.expireIn,
+        expiresIn: jwtConfig.expiresIn,
       },
     }),
     TypeOrmModule.forFeature([UserRepository]),
